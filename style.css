@@ -180,7 +180,62 @@ h4 {
     border-radius: var(--radius);
 }
 
+/*
+=================
+table
+=================
+ */
+ .rounded-table-container {
+    border: 2px solid var(--clr-primary-1);
+    border-radius: 1rem;
+}
 
+.rounded-table {
+    color: var(--clr-primary-1);
+    vertical-align: middle;
+    border-collapse: collapse;
+    margin-bottom: 0 !important;
+}
+
+.rounded-table tr:first-child th:first-child {
+    width: 20px;
+}
+
+.rounded-table tr th:first-child {
+    text-align: center;
+}
+
+.rounded-table th, .rounded-table td {
+    font-family: var(--ff-pirmary-bold);
+    padding: .5em;
+    border-bottom: 2px solid var(--clr-primary-1) !important;
+    border-left: 2px solid var(--clr-primary-1) !important;
+}
+
+.rounded-table tbody tr:last-child td, .rounded-table tbody tr:last-child th {
+    border-bottom: none !important;
+}
+
+.rounded-table thead tr th:last-child, .rounded-table tbody tr td:last-child {
+    border-left: 0 !important;
+}
+
+
+.table-svg-image {
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.table-svg-image img {
+    width: 40px;
+}
+
+/*
+====================
+end table section
+====================
+*/
 
 
 
