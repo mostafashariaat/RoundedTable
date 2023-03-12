@@ -1,0 +1,187 @@
+/*
+===========================
+  fonts
+===========================
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "iransans";
+    src: url(./../font/iransans/IRANSansWeb.woff) format("woff"), url(./../font/iransans/IRANSansWeb.woff2) format("woff2"), url(./../font/iransans/IRANSansWeb.eot) format("eot"), url(./../font/iransans/IRANSansWeb.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "iransansBold";
+    src: url(./../font/iransans/IRANSansWeb_Bold.woff) format("woff"), url(./../font/iransans/IRANSansWeb_Bold.woff2) format("woff2"), url(./../font/iransans/IRANSansWeb_Bold.eot) format("eot"), url(./../font/iransans/IRANSansWeb_Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "reyhaneh";
+    src: url("./../font/reyhaneh/REYHANEH.woff") format("woff"),
+    url("./../font/reyhaneh/REYHANEH.woff2") format("woff2"),
+    url("./../font/reyhaneh/REYHANEH.ttf") ;
+}
+
+
+/*
+===========================
+root setting
+===========================
+*/
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: #676fa3;
+    --clr-primary-2: #cddeff;
+    --clr-primary-3: #eef2ff;
+    --clr-primary-4: #417aab;
+    --clr-white: #fff;
+    --clr-black: #000;
+    --clr-modal: rgba(103, 111, 163, .7);
+    --ff-primary: "iransans", sans-serif;
+    --ff-pirmary-bold: "iransansBold", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --ff-third: "reyhaneh", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.75rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --gradiant-background-1: rgb(205, 222, 255);
+    --gradiant-background-2: linear-gradient(38deg, rgba(205, 222, 255, 0) 0%, rgba(205, 222, 255, 1) 40%);
+    --gradiant-background-3: rgb(205, 222, 255);
+    --gradiant-background-4: linear-gradient(144deg, rgba(205, 222, 255, 0) 25%, rgba(205, 222, 255, 1) 90%);
+    --gradiant-background-3-hover: rgb(103, 111, 163);
+    --gradiant-background-4-hover: linear-gradient(144deg, rgba(103, 111, 163, 1) 0%, rgba(205, 222, 255, 1) 60%);
+    --button-border-radious: 10px;
+}
+
+
+/*
+===============
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    border: 0;
+    outline: 0;
+}
+
+input:focus {
+    outline: 0;
+}
+
+textarea:focus,
+textarea:active {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-pirmary-bold);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1;
+    }
+}
+
+.sections {
+    background: var(--gradiant-background-1);
+    background: var(--gradiant-background-2);
+    border-radius: var(--radius);
+}
+
+
+
+
+
+
